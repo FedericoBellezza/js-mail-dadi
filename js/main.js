@@ -3,22 +3,22 @@
 // * controlla che sia nella lista di chi può accedere
 // * stampa un messaggio appropriato sull'esito del controllo
 
-// let emailList = ['federico@gmail.com', 'marco@gmail.com', 'francesco@gmail.com', 'stefano@gmail.com', 'luca@gmail.com'];
-// let isEmailPresent = false;
-// let userEmail = prompt('Inserisci la tua email');
-// for (let i = 0; i < emailList.length; i++) {
-// 	if (emailList[i] === userEmail) {
-// 		isEmailPresent = true;
-// 	}
-// }
-// console.log(isEmailPresent ? 'Benvenuto' : 'Mi dispiace ma la tua mail non è nella lista');
+let emailList = ['federico@gmail.com', 'marco@gmail.com', 'francesco@gmail.com', 'stefano@gmail.com', 'luca@gmail.com'];
+let isEmailPresent = false;
+let userEmail = prompt('Inserisci la tua email');
+for (let i = 0; i < emailList.length; i++) {
+	if (emailList[i] === userEmail) {
+		isEmailPresent = true;
+	}
+}
+alert(isEmailPresent ? 'Benvenuto, la tua mail è presente nella lista' : 'Mi dispiace ma la tua mail non è nella lista');
 
 // ^ Gioco dei dadi
 // * LANCIO DEI DADI
-alert('Lancia il dado');
+alert('Premi OK per lanciare il dado');
 let userNum = Math.floor(Math.random() * (6 - 1 + 1) + 1);
 alert(`Il tuo numero è ${userNum}`);
-alert('Il computer lancia il dado');
+alert('Premi OK per lanciare il dado del computer');
 let computerNum = Math.floor(Math.random() * (6 - 1 + 1) + 1);
 alert(`Il numero del computer è ${computerNum}`);
 
